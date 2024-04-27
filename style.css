@@ -8,6 +8,10 @@ header {
     background-color: #1F2937;
 }
 
+header li {
+    display: inline;
+}
+
 .header_logo {
     font-size: 24px;
     color: #f9faf8;
