@@ -46,13 +46,14 @@ button {
     display: flex;
 }
 
-.gallery_title {
+/* .gallery_title {
     width: 100%;
-}
+} */
 
 .gallery_item > img {
     width: 200px;
     height: 200px;
+    justify-content: space-between;
 }
 
 .quote_block {
@@ -64,9 +65,6 @@ button {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
-}
-
-.quote_block > h3 {
 }
 
 .call_to_action {
