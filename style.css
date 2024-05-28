@@ -1,0 +1,17 @@
+/* setup for page first */
+* {
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    border: 4px solid red;
+}
+section {
+    border: 4px solid lime;
+}
+
+inner-column {
+    display: block;
+    border: 4px solid orange;
+    padding: 10px;
+}
