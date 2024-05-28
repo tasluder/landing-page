@@ -1,3 +1,4 @@
+@import 'meyer-reset.css';
 /* setup for page first */
 * {
     box-sizing: border-box;
@@ -8,6 +9,17 @@ header, main, footer {
 }
 section {
     border: 4px solid lime;
+}
+
+/* STRUCTURE */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 inner-column {
