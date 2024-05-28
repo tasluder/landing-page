@@ -1,124 +1,26 @@
 @import 'meyer-reset.css';
-/* setup for page first */
-* {
-    box-sizing: border-box;
-}
-
-picture {
-    display: block;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-a {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-}
-
-header, main, footer {
-    border: 4px solid red;
-}
-section {
-    border: 4px solid lime;
-}
-
-/* SETTINGS */
-html {
-    --black: #333;
-    --white: #efefef;
-    --color: magenta;
-    --dark: navy;
-    --light: lightblue;
-}
 
 /* DEV STYLES */
-
-body * {
-    border: 1px solid blue;
-    padding: 2px;
+header, main, footer {
+    border: 3px solid red;
+    min-height: 200px;
+}
+.section {
+    border: 3px solid orange;
+    min-height: 200px;
 }
 
-/* STRUCTURE */
-body {
+.card {
+    border: 3px solid green;
+    min-height: 100px;
+}
+
+/* WHOLE SITE SETTINGS */
+body * {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    flex-basis: auto;
 }
-
-main {
-    flex-grow: 1;
-}
-
-/* TYPOGRAPHY */
-.loud-voice {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
-    font-family: sans-serif;
-}
-
-.calm-voice {
-    font-size: 1rem;
-    line-height: 1.3;
-    font-family: sans-serif;
-}
-
 /* COMPONENTS */
 
-.button {
-    font-family: sans-serif;
-    background-color: blue;
-    color: white;
-    font-size: 1.2rem;
-    padding: 0.6em 1em;
-    border-radius: 6px;
-}
-
 /* MODULES */
-inner-column {
-    display: block;
-    border: 4px solid orange;
-    padding: 10px;
-    width: 98%;
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-graphic-diptych {
-    display: block;
-}
-
-graphic-diptych text-content {
-    display: block;
-}
-
-graphic-diptych text-content p {
-    margin-top: 10px;
-}
-
-graphic-diptych text-content .button {
-    margin-top: 10px;
-}
-
-@media (min-width: 700px) {
-    graphic-diptych {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    graphic-diptych :is(text-content, picture) {
-        flex-basis: 50%
-    }
-}
-
-.welcome {
-    background-color: var(--dark);
-    color: var (--white);  
-}
